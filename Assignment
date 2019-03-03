@@ -1,56 +1,70 @@
 1.	CREATE TABLE Record
 (
-ID		INTEGER,
-NAME		TEXT,
-ADDRESS	TEXT,
-PHONE		INTEGER,
+Id		INTEGER,
+Name		TEXT,
+Address		TEXT,
+Phone		INTEGER,
 );
-1.	INSERT INTO Record (ID, NAME, ADDRESS, PHONE)
+1.	INSERT INTO Record (Id, Name, Address, Phone)
 VALUES (‘1’, ‘Mercy’, ‘Lagos Island’, ‘1221000’)
 2.	UPDATE Record
-SET PHONE= ‘20864248’
+SET Phone= ‘20864248’
 WHERE ID = 1
 3.	Select * FROM Record
-4. 	SELECT ID, NAME
+4. 	SELECT Id, Name
 FROM Record
-5.	SELECT ID
+5.	SELECT Id
 FROM Record
-WHERE ID = ‘1’
+WHERE Id = ‘1’
 6.	DELETE Record
 7. 	ALTER TABLE Record
-	DROP COLUMN PHONE
+	DROP COLUMN Phone
 
 
 
 
 
 
-MECURY TOURS
-Bug ID.	Short Description	Steps	Resolution
-001	Verify  that the Flight hyperlink links the user to the flight page	1.	Flight link has a link to it.
+2. MERCURY TOURS
+Bug ID.	
+001	Verify  that the Flight hyperlink links the user to the flight page
 
 	The hyperlink redirects the user to the Homepage due to the fact that the user wasn’t Signed on. Therefore a prompt or  message displaying that the user should Sign on before the page can be made available should be added 
-Bug ID.	Short Description	Steps	Resolution
-002	
-Verify that the  Business Travel @ About.com hyperlink links to a web page with information about Business Travel	
-1.	Business Travel @ About.com has a link to it.
-2.	 Business Travel @ About.com link, links to the another website www.about.com
+Bug ID.	
+002	Verify that the  Business Travel @ About.com hyperlink links to a web page with information about Business Travel	
 
-3.	 When user clicks Business Travel@About.com the link is opened in a new tab in the same browser, so that user can remain on the newstour.demoaut.com website and About.com website in different tab.
-4.	 A link or button to go back to the Homepage in the Business Travel@About.com link in the tab within the browser is available.
 	The link is broken and displays the 404 error message as the title of the web page that is generated in a new tab and the page displays that the page not available
-003	Verify that the user is able to navigate back to the home page using a back button		Back button should be integrated into each page in other for user to have a more friendly approach to the website
+Bug ID.
+003	Verify that the user is able to navigate back to the home page using a back button		
 
-Bug ID.	Short Description	Steps	Resolution
-004	Verify that the  Salon Travel hyperlink links to a web page with information about Salon Travel	1.	 Salon Travel has a link.
-2.	 A page is displayed showing some information to user.
-3.	 A link or button to go back to the Homepage is available.
- 
+	Back button should be integrated into each page in other for user to have a more friendly approach to the website
+
+Bug ID.	
+004	Verify that the  Salon Travel hyperlink links to a web page with information about Salon Travel	1.	 
 
 	The link is broken and displays the 404 error message in the web page that is generated in a new tab and the page displays that the page is not working
  
+Bug ID.
+
+005	Verify that the system accepts the correct password upon registration of user to sign on
+
+	There is no verification of the password and confirm password as the system does not verify that the passwords are the same 
+	
+Bug ID.
+
+006	Ensure that an error message is displayed when user inputs wrong details in the text fields
+
+	No error message is displayed when user inputs either the wrong username or password, 
+	No error message is displayed when system is unable to process a request of being redirected to another page
+	
+Bug ID.
+
+007	Verify that a registered user is able to sign in on the website
+
+	User is unable to sign in with valid username and password as the website does not record user details, user has to register each time to be get some required information
 
 
+3.
 
 II	Smoke testing
 III	Retest 
